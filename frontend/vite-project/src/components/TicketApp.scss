@@ -1,0 +1,41 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  min-width: 300px;
+}
+
+.legend {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+
+  .legend-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    border-radius: 3px;
+
+    &.available {
+      background-color: #4caf50;
+    }
+
+    &.booked {
+      background-color: #f44336;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.seat-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+
+  .seat-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .seat {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s;
+
+    &.available {
+      background-color: #4caf50;
+    }
+    &.booked {
+      background-color: #f44336;
+      cursor: default;
+    }
+  }
+}
+
+.stage-layout {
+  .seat-row {
+    justify-content: center;
+  }
+}
+
+.hall-layout {
+  .seat-row {
+    justify-content: center;
+  }
+}
