@@ -120,7 +120,7 @@ function TicketApp() {
 							placeholder='Ваше имя'
 							value={name}
 							onChange={e => setName(e.target.value)}
-							style={{ width: '100%', padding: 8, marginBottom: 12 }}
+							style={{ width: '95%', padding: 8, marginBottom: 12 }}
 						/>
 						<button onClick={bookSeat} style={{ marginRight: 10 }}>
 							Забронировать

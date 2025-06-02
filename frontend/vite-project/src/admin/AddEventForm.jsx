@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react'
+import './AddEventForm.scss'
 
 function AddEventForm({ onAdd }) {
 	const [name, setName] = useState('')
@@ -37,9 +38,9 @@ function AddEventForm({ onAdd }) {
 				placeholder='Название события'
 			/>
 			<select value={type} onChange={e => setType(e.target.value)}>
-				<option value='Stage'>Stage</option>
-				<option value='Field'>Field</option>
-				<option value='Hall'>Hall</option>
+				<option value='Stage'>Сцена</option>
+				<option value='Field'>Стадион</option>
+				<option value='Hall'>Зал</option>
 			</select>
 			<select value={category} onChange={e => setCategory(e.target.value)}>
 				<option value='Event'>Event</option>
